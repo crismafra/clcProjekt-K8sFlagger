@@ -23,10 +23,11 @@ However, for this project following tools are used:
 ### NGINX
 More specifically the NGINX Ingress Controller is used. It therefore is responsible to traffic routing and
 ### Prometheus
-    tba
+
 ### Helm
 Helm is a tool used to manage Kubernetes applications that simplifies their deployment through collections of files, known as charts. The Charts describe a related set of Kubernetes resources and assist in defining, installing and updating applications regardless of their complexity.
 ### Microsoft Teams
+With the help of Prometheus alerting through AlertManager we will be able to send alert messages via Teams. For that we have to configure Incoming Webhooks in Teams. This will then generate a webhook URL which will be used to post messages to our channel. To send the third-party tool for Microsoft Teams, a alertmanager.yaml file will be needed. So that our Alertmanager is ready for sending alerts using webhook, a Secret object - which is used by Prometheus operator’s Alertmanager and then applied to Kubernetes - must be created. Last but not least a default Microsoft Teams Message card template has to be defined and a Kubernetes manifest with Helm passing “Incoming Webhook URL” of Microsoft Teams must be generated. This will be finally deployed to Kubernetes and makes it possible to receive alerts in our Microsoft Teams Channel.
 ####
 
 More details on the website: [Flagger](https://flagger.app/)
