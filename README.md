@@ -22,12 +22,17 @@ These include Service Meshes like *Istio* or *Linkerd*, Ingress Controller like 
 However, for this project following tools are used:
 ### NGINX
 More specifically the NGINX Ingress Controller is used. It therefore is responsible to traffic routing and
+
 ### Prometheus
+Prometheus is an open-source systems monitoring and alerting toolkit. Prometheus collects and stores its metrics as time series data, i.e. metrics information is stored with the timestamp at which it was recorded, alongside optional key-value pairs called labels. Prometheus scrapes metrics from instrumented jobs, either directly or via an intermediary push gateway for short-lived jobs. It stores all scraped samples locally and runs rules over this data to either aggregate and record new time series from existing data or generate alerts.
+More details on the website: [Prometheus](https://prometheus.io/docs/introduction/overview/)
 
 ### Helm
 Helm is a tool used to manage Kubernetes applications that simplifies their deployment through collections of files, known as charts. The Charts describe a related set of Kubernetes resources and assist in defining, installing and updating applications regardless of their complexity.
+More details on the website: [Helm](https://helm.sh/)
+
 ### Microsoft Teams
-With the help of Prometheus alerting through AlertManager we will be able to send alert messages via Teams. For that we have to configure Incoming Webhooks in Teams. This will then generate a webhook URL which will be used to post messages to our channel. To send the third-party tool for Microsoft Teams, a alertmanager.yaml file will be needed. So that our Alertmanager is ready for sending alerts using webhook, a Secret object - which is used by Prometheus operator’s Alertmanager and then applied to Kubernetes - must be created. Last but not least a default Microsoft Teams Message card template has to be defined and a Kubernetes manifest with Helm passing “Incoming Webhook URL” of Microsoft Teams must be generated. This will be finally deployed to Kubernetes and makes it possible to receive alerts in our Microsoft Teams Channel.
+With the help of Prometheus alerting through AlertManager we will be able to send alert messages via Teams. For that we have to configure Incoming Webhooks in Teams. This will then generate a webhook URL which will be used to post messages to our channel. To send the third-party tool for Microsoft Teams, an alertmanager.yaml file will be needed. So that our Alertmanager is ready for sending alerts using webhook, a Secret object - which is used by Prometheus operator’s Alertmanager and then applied to Kubernetes - must be created. Last but not least a default Microsoft Teams Message card template has to be defined and a Kubernetes manifest with Helm passing “Incoming Webhook URL” of Microsoft Teams must be generated. This will be finally deployed to Kubernetes and makes it possible to receive alerts in our Microsoft Teams Channel.
 ####
 
 More details on the website: [Flagger](https://flagger.app/)
