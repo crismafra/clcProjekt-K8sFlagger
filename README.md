@@ -25,7 +25,7 @@ More specifically the NGINX Ingress Controller is used. It therefore is responsi
 ### Prometheus
     tba
 ### Helm
-    tba
+Helm is a tool used to manage Kubernetes applications that simplifies their deployment through collections of files, known as charts. The Charts describe a related set of Kubernetes resources and assist in defining, installing and updating applications regardless of their complexity.
 ### Microsoft Teams
 ####
 
