@@ -37,25 +37,25 @@ Helm is a tool used to manage Kubernetes applications that simplify their deploy
 More details on the website: [Helm](https://helm.sh/)
 
 ### Microsoft Teams
-With the help of Prometheus alerting through AlertManager we will be able to send alert messages via Teams. For that we have to configure Incoming Webhooks in Teams. This will then generate a webhook URL which will be used to post messages to our channel. To send the third-party tool for Microsoft Teams, an alertmanager.yaml file will be needed. So that our AlertManager is ready for sending alerts using webhook, a Secret object - which is used by Prometheus operator’s AlertManager and then applied to Kubernetes - must be created. Last but not least a default Microsoft Teams Message card template has to be defined and a Kubernetes manifest with Helm passing “Incoming Webhook URL” of Microsoft Teams must be generated. This will be finally deployed to Kubernetes and makes it possible to receive alerts in our Microsoft Teams Channel. 
+With the help of Prometheus alerting through AlertManager we will be able to send alert messages via Teams. For that we have to configure incoming Webhooks in Teams. This will then generate a webhook URL which will be used to post messages to our channel. To send the third-party tool for Microsoft Teams, an alertmanager.yaml file will be needed. So that our AlertManager is ready for sending alerts using webhook, a Secret object - which is used by Prometheus operator’s AlertManager and then applied to Kubernetes - must be created. Last but not least a default Microsoft Teams Message card template has to be defined and a Kubernetes manifest with Helm passing “Incoming Webhook URL” of Microsoft Teams must be generated. This will be finally deployed to Kubernetes and makes it possible to receive alerts in our Microsoft Teams Channel. 
 
 More details on the website: [msteams](https://github.com/prometheus-msteams/prometheus-msteams)
 
 A deep look into Flagger and the tools: [Flagger](https://flagger.app/)
 
 ## 3. Architecture
-Following diagram shows how the components work together for the canary rollout:
+Following diagram shows how the previous described components work together for the canary rollout:
 [![N|Solid](https://raw.githubusercontent.com/fluxcd/flagger/main/docs/diagrams/flagger-nginx-overview.png)](https://raw.githubusercontent.com/fluxcd/flagger/main/docs/diagrams/flagger-nginx-overview.png)
 
 # 4. Milestones and Responsibilities
 - *1 - Get required tools running: Flagger, NGINX, Helm*  
-    **Resonsible:** Hanreich Martin, **Working:** All  
+    **Responsible:** Hanreich Martin, **Working:** All  
     **Date:** 5.1.2022  
 - *2 - Perform the canary deployment*  
-    **Resonsible**: Cristina Mafra, **Working:** All  
+    **Responsible**: Cristina Mafra, **Working:** All  
     **Date:** 12.1.2022  
 - *3 - Demo automatic rollback*  
-    **Resonsible**: Hanreich Martin, **Working:** Hanreich Martin  
+    **Responsible**: Hanreich Martin, **Working:** Hanreich Martin  
     **Date:** 19.1.2022  
 - *4 - Demo monitoring with Prometheus*  
     **Responsible**: Cristina Mafra, **Working:** Cristina Mafra  
