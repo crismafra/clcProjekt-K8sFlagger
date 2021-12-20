@@ -29,7 +29,7 @@ Prometheus is an open-source systems monitoring and alerting toolkit. Prometheus
 More details on the website: [Prometheus](https://prometheus.io/docs/introduction/overview/)
 
 ### Helm
-Helm is a tool used to manage Kubernetes applications that simplifies their deployment through collections of files, known as charts. The Charts describe a related set of Kubernetes resources and assist in defining, installing and updating applications regardless of their complexity.
+Helm is a tool used to manage Kubernetes applications that simplifies their deployment through a collections of files, known as *Charts*. The *Charts* describe a related set of Kubernetes resources and assist in defining, installing and updating applications regardless of their complexity.
 
 More details on the website: [Helm](https://helm.sh/)
 
