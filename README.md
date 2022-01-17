@@ -47,6 +47,24 @@ A deep look into Flagger and the tools: [Flagger](https://flagger.app/)
 Following diagram shows how the previous described components work together for the canary rollout:
 [![N|Solid](https://raw.githubusercontent.com/fluxcd/flagger/main/docs/diagrams/flagger-nginx-overview.png)](https://raw.githubusercontent.com/fluxcd/flagger/main/docs/diagrams/flagger-nginx-overview.png)
 
+## 3. Microsoft Teams Alert Step by Step Guide
+
+# Set up Microsoft Teams
+Go to the channel, where you want to receive alerts. Click on the ... on the right side of the channel name and select Connectors from the dropdown list.
+
+A window will then open. Add "Incoming Webhook".
+
+Now the connector "Incoming Webhook" opens where you have to select "Add" one more time.
+
+To configure the connector now you have to select the pre-selected channel again by Clicking on the ... on the right side of Channel name via the connector. Again select Connectors from the dropdown list. Next click on the "Configure" button next to “Incoming Webhook”. 
+
+After that, you need to specify a name as well as an image for the IncomingWebhook connection. When you have completed these steps, a URL will be created. Copy it to the clipboard and click on "Done". You will need this URL when you switch to the service that will send data to your groups.
+
+# Configure Alertmanager via Prometheus
+To send the third-party tool for Microsoft Teams, generate a alertmanager.yaml file to configure Alertmanager.
+
+
+
 # 4. Milestones and Responsibilities
 - *1 - Get required tools running: Flagger, NGINX, Helm*  
     **Responsible:** Hanreich Martin, **Working:** All  
