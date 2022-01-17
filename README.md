@@ -49,19 +49,37 @@ Following diagram shows how the previous described components work together for 
 
 ## 3. Microsoft Teams Alert Step by Step Guide
 
-# Set up Microsoft Teams
+#### Set up Microsoft Teams
 Go to the channel, where you want to receive alerts. Click on the ... on the right side of the channel name and select Connectors from the dropdown list.
+
+<img width="471" alt="pic1" src="https://user-images.githubusercontent.com/84008097/149829568-bc9f5594-3435-44ef-821b-620b7c3e2040.png">
+
 
 A window will then open. Add "Incoming Webhook".
 
+![pic2](https://user-images.githubusercontent.com/84008097/149829888-4bcb8b2c-aa22-433b-8def-109e6c08013c.png)
+
+
 Now the connector "Incoming Webhook" opens where you have to select "Add" one more time.
+
+![pic3](https://user-images.githubusercontent.com/84008097/149829956-c4d52672-bb21-405b-b3cd-31f3957d6115.png)
+
 
 To configure the connector now you have to select the pre-selected channel again by Clicking on the ... on the right side of Channel name via the connector. Again select Connectors from the dropdown list. Next click on the "Configure" button next to “Incoming Webhook”. 
 
+![pic4](https://user-images.githubusercontent.com/84008097/149830023-9269bc5c-ab12-4f81-89bf-420e3129590d.png)
+
+
 After that, you need to specify a name as well as an image for the IncomingWebhook connection. When you have completed these steps, a URL will be created. Copy it to the clipboard and click on "Done". You will need this URL when you switch to the service that will send data to your groups.
 
-# Configure Alertmanager via Prometheus
+![pic5](https://user-images.githubusercontent.com/84008097/149830061-431ed6d4-585f-45d0-8d4f-a4139c1f0a77.png)
+![pic6](https://user-images.githubusercontent.com/84008097/149830164-716f14ec-04fa-478f-aec6-a17b7947f16f.png)
+
+
+#### Configure Alertmanager via Prometheus
 To send the third-party tool for Microsoft Teams, generate a alertmanager.yaml file to configure Alertmanager.
+
+<img width="471" alt="pic7" src="https://user-images.githubusercontent.com/84008097/149830223-d341f974-81bb-4e61-bdeb-5beb097077c0.png">
 
 
 
