@@ -27,7 +27,9 @@ More specifically the NGINX Ingress Controller is used. It is responsible for tr
 See: [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/)]
 
 ### Prometheus
-Prometheus is an open-source systems monitoring and alerting toolkit. Prometheus collects and stores its metrics as time series data, i.e. metrics information is stored with the timestamp at which it was recorded, alongside optional key-value pairs called labels. Prometheus scrapes metrics from instrumented jobs, either directly or via an intermediary push gateway for short-lived jobs. It stores all scraped samples locally and runs rules over this data to either aggregate and record new time series from existing data or generate alerts.<img width="471" alt="image" src="https://user-images.githubusercontent.com/84008097/149830685-38f5cf99-7052-4633-8c90-f284478795ef.png">
+Prometheus is an open-source systems monitoring and alerting toolkit. Prometheus collects and stores its metrics as time series data, i.e. metrics information is stored with the timestamp at which it was recorded, alongside optional key-value pairs called labels. Prometheus scrapes metrics from instrumented jobs, either directly or via an intermediary push gateway for short-lived jobs. It stores all scraped samples locally and runs rules over this data to either aggregate and record new time series from existing data or generate alerts.<img width="471" alt="image" src="https://user-images.githubusercontent.com/84008097/149830685-38f5cf99-7052-4633-8c90-f284478795ef.png"> 
+
+INSERTED WRONG PICTURE??????
 
 
 More details on the website: [Prometheus](https://prometheus.io/docs/introduction/overview/)
