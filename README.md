@@ -38,8 +38,9 @@ More details on the website: [Helm](https://helm.sh/)
 
 ### Microsoft Teams
 
-The goal is to configure Flagger to send automatically generated notifications to MS teams regarding Canary deployment.
+The goal is to configure Flagger to send automatically generated notifications to MS Teams regarding the Canary deployment. To do this, an inbound webhook must first be configured in Microsoft Teams. This webhook URL, will be used to send messages via Flagger to the desired channel. Finally, when triggering a Canary deployment by updating the container image, an MS Teams notification is generated.
 
+Translated with www.DeepL.com/Translator (free version)
 More details on the website: [msteams](https://github.com/prometheus-msteams/prometheus-msteams)
 
 A deep look into Flagger and the tools: [Flagger](https://flagger.app/)
